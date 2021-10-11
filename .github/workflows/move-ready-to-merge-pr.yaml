@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: move PR
-        uses: alex-page/github-project-automation-plus@fdb7991b72040d611e1123d2b75ff10eda9372c9
+        uses: alex-page/github-project-automation-plus@bb266ff4dde9242060e2d5418e120a133586d488
         with:
           project: Docs team reviews
           column: Triage
