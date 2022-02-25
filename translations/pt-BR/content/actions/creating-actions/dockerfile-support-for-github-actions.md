@@ -67,7 +67,7 @@ ENTRYPOINT ["sh", "-c", "echo $GITHUB_SHA"]
 ```dockerfile
 # Container image that runs your code
 FROM debian:stretch-20210816-slim
-FROM debian:stretch-20210902-slim
+FROM debian:stretch-slim
 
 # Copies your code file from your action repository to the filesystem path `/` of the container
 COPY entrypoint.sh /entrypoint.sh
