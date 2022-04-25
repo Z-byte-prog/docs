@@ -59,7 +59,7 @@ RUN npm run build
 # --------------------------------------------------------------------------------
 
 FROM node:16.8.0-alpine as production
-FROM node:16.9-alpine as production
+FROM node:16-alpine as production
 
 # Let's make our home
 WORKDIR /usr/src/docs
