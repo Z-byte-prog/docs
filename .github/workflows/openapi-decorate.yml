@@ -36,7 +36,7 @@ jobs:
         run: script/rest/update-files.js --decorate-only
 
       - name: Check in the decorated files
-        uses: EndBug/add-and-commit@2bdc0a61a03738a1d1bda24d566ad0dbe3083d87
+        uses: EndBug/add-and-commit@d4d066316a2a85974a05efb42be78f897793c6d9
         with:
           # The arguments for the `git add` command
           add: 'lib/rest/static/decorated'
