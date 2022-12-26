@@ -21,7 +21,7 @@ jobs:
           column: Triage
           repo-token: ${{ secrets.DOCUBOT_READORG_REPO_WORKFLOW_SCOPES }}
       - name: remove label
-        uses: andymckay/labeler@22d5392de2b725cea4b284df5824125054049d84
+        uses: andymckay/labeler@3a4296e9dcdf9576b0456050db78cfd34853f260
         with:
           remove-labels: 'waiting for review'
           repo-token: ${{ secrets.GITHUB_TOKEN }}
