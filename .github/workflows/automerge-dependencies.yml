@@ -36,7 +36,7 @@ jobs:
       }}
     runs-on: ubuntu-latest
     steps:
-      - uses: tjenkinson/gh-action-auto-merge-dependency-updates@4d7756c04d9d999c5968697a621b81c47f533d61
+      - uses: tjenkinson/gh-action-auto-merge-dependency-updates@8f8bd53aa6257ee050e8d4d4a5cecedab436f264
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           allowed-actors: dependabot[bot]
