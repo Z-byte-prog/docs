@@ -155,7 +155,7 @@
     "lint-staged": "^11.1.2",
     "make-promises-safe": "^5.1.0",
     "minimatch": "^3.0.4",
-    "mkdirp": "^1.0.4",
+    "mkdirp": "^3.0.1",
     "mock-express-response": "^0.3.0",
     "mockdate": "^3.0.5",
     "nock": "^13.1.3",
