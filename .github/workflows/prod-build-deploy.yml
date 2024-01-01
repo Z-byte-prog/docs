@@ -89,7 +89,7 @@ jobs:
 
       - name: Create a Heroku build source
         id: build-source
-        uses: actions/github-script@2b34a689ec86a68d8ab9478298f91d5401337b7d
+        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea
         env:
           HEROKU_API_TOKEN: ${{ secrets.HEROKU_API_TOKEN }}
         with:
@@ -134,7 +134,7 @@ jobs:
 
       - name: Deploy
         id: deploy
-        uses: actions/github-script@2b34a689ec86a68d8ab9478298f91d5401337b7d
+        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           HEROKU_API_TOKEN: ${{ secrets.HEROKU_API_TOKEN }}
@@ -196,7 +196,7 @@ jobs:
             }
 
       - name: Mark the deployment as inactive if timed out
-        uses: actions/github-script@2b34a689ec86a68d8ab9478298f91d5401337b7d
+        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea
         if: ${{ steps.deploy.outcome == 'cancelled' }}
         env:
           DEPLOYMENT_ID: ${{ steps.deploy.outputs.deploymentId }}
@@ -227,7 +227,7 @@ jobs:
             console.log('⏲️ Deployment status: error - The deployment timed out...')
 
       - name: Purge Fastly edge cache
-        uses: actions/github-script@2b34a689ec86a68d8ab9478298f91d5401337b7d
+        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea
         env:
           FASTLY_TOKEN: ${{ secrets.FASTLY_TOKEN }}
           FASTLY_SERVICE_ID: ${{ secrets.FASTLY_SERVICE_ID }}

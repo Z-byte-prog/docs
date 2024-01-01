@@ -50,7 +50,7 @@ jobs:
     # IMPORTANT: Intentionally OMIT a `concurrency` configuration from this job!
     steps:
       - name: Add a label to the PR to block deployment during undeployment
-        uses: actions/github-script@2b34a689ec86a68d8ab9478298f91d5401337b7d
+        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PR_NUMBER: ${{ github.event.pull_request.number }}
@@ -83,7 +83,7 @@ jobs:
         run: npm install --no-save --include=optional esm
 
       - name: Undeploy
-        uses: actions/github-script@2b34a689ec86a68d8ab9478298f91d5401337b7d
+        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           HEROKU_API_TOKEN: ${{ secrets.HEROKU_API_TOKEN }}
@@ -127,7 +127,7 @@ jobs:
 
       - if: ${{ always() }}
         name: Remove the label from the PR to unblock deployment
-        uses: actions/github-script@2b34a689ec86a68d8ab9478298f91d5401337b7d
+        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PR_NUMBER: ${{ github.event.pull_request.number }}
