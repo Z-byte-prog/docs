@@ -25,7 +25,7 @@ jobs:
         run: rm .git/hooks/post-checkout
 
       - name: Sync
-        uses: crowdin/github-action@d7f217268068f1244883a993379d62d816f84f25
+        uses: crowdin/github-action@30849777a3cba6ee9a09e24e195272b8287a0a5b
         with:
           upload_translations: false
           download_translations: true
