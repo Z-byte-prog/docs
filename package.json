@@ -38,7 +38,7 @@
     "github-slugger": "^1.4.0",
     "got": "^11.8.2",
     "gray-matter": "^4.0.3",
-    "hast-util-from-parse5": "^7.1.0",
+    "hast-util-from-parse5": "^8.0.1",
     "hast-util-parse-selector": "^3.1.0",
     "hast-util-select": "^5.0.1",
     "hast-util-to-string": "^2.0.0",
