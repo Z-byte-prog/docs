@@ -49,7 +49,7 @@
     "hot-shots": "^8.5.1",
     "html-entities": "^2.3.2",
     "imurmurhash": "^0.1.4",
-    "js-cookie": "^3.0.1",
+    "js-cookie": "^3.0.5",
     "js-yaml": "^4.1.0",
     "liquidjs": "^9.22.1",
     "lodash": "^4.17.21",
