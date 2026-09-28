@@ -17,7 +17,7 @@ jobs:
       filterContentDir: ${{ steps.filter.outputs.filterContentDir }}
     steps:
       - name: Get files changed
-        uses: dorny/paths-filter@eb75a1edc117d3756a18ef89958ee59f9500ba58
+        uses: dorny/paths-filter@ceb8a2b8f2d89434be7ff52d3de7ec3738c5cc9d
         id: filter
         with:
           # Base branch used to get changed files
